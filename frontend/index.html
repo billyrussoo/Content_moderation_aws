@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Moderation App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Video Moderation App</h1>
+        <video id="video" width="640" controls>
+            <source id="video-source" src="" type="video/mp4">
+        </video>
+        <div id="moderation-bar"></div>
+        <select id="folder-select">
+            <option value="aggressive">Aggressive</option>
+            <option value="non_aggressive">Non Aggressive</option>
+        </select>
+        <button id="moderate-btn">Start Moderation</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

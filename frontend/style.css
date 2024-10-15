@@ -1,0 +1,19 @@
+.container {
+    width: 640px;
+    margin: auto;
+    text-align: center;
+}
+
+#moderation-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background: #eee;
+}
+
+select, button {
+    margin-top: 20px;
+    padding: 10px;
+}
