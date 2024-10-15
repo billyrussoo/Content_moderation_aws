@@ -4,22 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Moderation App</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <div class="container">
         <h1>Video Moderation App</h1>
+
+        <!-- Dropdown to select video -->
+        <label for="video-select">Select a video:</label>
+        <select id="video-select">
+            <option value="">Select a video</option>
+        </select>
+
+        <!-- Video player -->
         <video id="video" width="640" controls>
             <source id="video-source" src="" type="video/mp4">
         </video>
-        <div id="moderation-bar"></div>
-        <select id="folder-select">
-            <option value="aggressive">Aggressive</option>
-            <option value="non_aggressive">Non Aggressive</option>
-        </select>
-        <button id="moderate-btn">Start Moderation</button>
+
+        <!-- Button to start moderation -->
+        <button id="moderate-btn" disabled>Start Moderation</button>
+
+        <!-- Moderation timeline -->
+        <div id="moderation-bar" class="moderation-timeline"></div>
+
+        <!-- Moderation labels below the timeline -->
+        <div id="moderationLabels"></div>
+
+        <!-- Loader element for feedback -->
+        <div id="loader" class="loader" style="display: none;"></div>
     </div>
 
-    <script src="app.js"></script>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
 </body>
 </html>
