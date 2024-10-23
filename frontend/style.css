@@ -59,15 +59,10 @@ video {
     display: block;
 }
 
-/* Timeline */
-#timeline {
-    margin-top: 10px;
-    height: 30px;
-}
-
 /* Loader */
-#loader {
-    margin-top: 10px;
+.loader {
+    margin-top: 20px;
     font-size: 18px;
+    color: #007bff;
     text-align: center;
 }

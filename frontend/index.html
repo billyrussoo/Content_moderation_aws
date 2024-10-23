@@ -25,13 +25,17 @@
         <button id="moderate-btn" disabled>Start Moderation</button>
 
         <!-- Moderation timeline -->
+        <h2>Video Moderation Results</h2>
         <div id="moderation-bar" class="moderation-timeline"></div>
-
-        <!-- Moderation labels below the timeline -->
         <div id="moderationLabels"></div>
 
+        <!-- Sentiment analysis and custom label results -->
+
+        <div id="sentimentAnalysisDiv"></div>
+        <div id="customLabelsDiv"></div>
+
         <!-- Loader element for feedback -->
-        <div id="loader" class="loader" style="display: none;"></div>
+        <div id="loader" class="loader" style="display: none;">Processing video...</div>
     </div>
 
     <script src="{{ url_for('static', filename='app.js') }}"></script>
